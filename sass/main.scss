@@ -1,0 +1,36 @@
+@import 'home';  
+
+$section-bkgd-cikir: grey; 
+$hover-color: green; 
+$accent-color: red; 
+
+@mixin format($size, $align) { 
+  font-size: $size; 
+  text-align:$align;
+}
+
+  body {
+  @include format(40px, center)
+  } 
+
+    section{ 
+        background-color: $section-bkgd-cikir;
+    }
+
+    section h1 { 
+        font-size: 60px;
+     } 
+
+     section h1:hover { 
+         color: $hover-color;
+     }
+
+     span { 
+         color: $accent-color;
+     } 
+
+    section p {  
+      font-style: italic; 
+    }
+
+    
